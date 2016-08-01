@@ -1,0 +1,19 @@
+%h1 Listing pins
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @pins.each do |pin|
+      %tr
+        %td= link_to 'Show', pin
+        %td= link_to 'Edit', edit_pin_path(pin)
+        %td= link_to 'Destroy', pin, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Pin', new_pin_path
