@@ -1,4 +1,4 @@
-= simple_form_for @pin do |f|
+= simple_form_for @pin, html: {multipart: true} do |f|
   - if @pin.errors.any?
     #error_explanation
       %h2= "#{pluralize(@pin.errors.count, "error")} prohibited this pin from being saved:"
@@ -6,6 +6,7 @@
         - @pin.errors.full_messages.each do |msg|
           %li= msg
 
+  =f.input :image
   =f.input :name
   =f.input :description
-  =f.button :submit, class: "btn btn primary"
+  =f.button :submit, class: "btn"

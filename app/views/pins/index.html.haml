@@ -1,6 +1,7 @@
 %h1 Listing pins
 - @pins.each do |pin|
-  =pin.image
+  -if (File.basename(pin.image.url) != "missing.png")
+    =pin.image
   %h2
     =pin.name
   %h3
