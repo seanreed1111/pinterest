@@ -50,6 +50,7 @@ gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'pg'
 gem 'devise'
+gem 'simple_form'
  
 group :development, :test do
   gem 'rspec-rails'
