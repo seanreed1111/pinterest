@@ -3,8 +3,6 @@ class CreatePins < ActiveRecord::Migration
     create_table :pins do |t|
       t.string :name
       t.string :description
-      t.string :image_file_name
-
       t.timestamps null: false
     end
   end

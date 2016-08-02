@@ -51,6 +51,7 @@ gem 'bootstrap-sass'
 gem 'pg'
 gem 'devise'
 gem 'simple_form'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
  
 group :development, :test do
   gem 'rspec-rails'
